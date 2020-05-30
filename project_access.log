@@ -303,3 +303,5 @@
 127.0.0.1 - - [29/May/2020:22:36:29 +0300] "GET /favicon.ico HTTP/1.1" 200 46 "http://test.local/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"
 127.0.0.1 - - [29/May/2020:22:39:56 +0300] "GET / HTTP/1.1" 200 32 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"
 127.0.0.1 - - [29/May/2020:22:39:56 +0300] "GET /favicon.ico HTTP/1.1" 200 32 "http://test.local/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"
+127.0.0.1 - - [30/May/2020:08:35:38 +0300] "GET / HTTP/1.1" 200 32 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"
+127.0.0.1 - - [30/May/2020:08:35:39 +0300] "GET /favicon.ico HTTP/1.1" 200 32 "http://test.local/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36"
