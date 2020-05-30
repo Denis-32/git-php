@@ -1,13 +1,19 @@
 <?php
-$a=1;
-$b=5;
-$iSum=0;
-while($a<=$b)
-{
-   $iSum=$iSum+$a;
-   $a++;
+if(isset($_POST['done'])) {
+    if (($_POST['a']==''))
+        echo "Введите все поля ";
+    elseif(($_POST['b']==''))
+        echo "Введите все поля ";
+    elseif(($_POST['a']>$_POST['b']))
+        echo "Суммы не существует";
+    else {
+        while ($_POST['a'] <= $_POST['b']) {
+            $iSum = $iSum + $_POST['a'];
+            $_POST['a']++;
+        }
+        echo "Равно=$iSum";
+    }
 }
-echo"$iSum";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,20 +22,14 @@ echo"$iSum";
 	<title>Document</title>
 </head>
 <body>
-
+<form action="" method="post">
+    <p>от</p>
+        <label>A</label><br />
+        <input type="text" name="a" placeholder="число"/><br />
+    <p>до</p>
+        <label>Б</label><br />
+        <input type="text" name="b" placeholder="число"/><br />
+    <p><input type="submit" name="done" value="сумма"></p>
+</form>
 </body>
 </html>
-
-/*for($i=$a;$i<=$b;$i++)
-{
-   $summ=$summ+$a;
-    echo($summ);
-}
-for($i=1;$i<=5;$i++)
-{
-    for($j=5;$j<=5;$j++)
-    {
-        echo($i+$j);
-    }
-    echo("<br />");
-}*/
